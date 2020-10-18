@@ -19,3 +19,7 @@ public test{
   }
 
 }
+
+
+
+java.lang 默认导入包  ：String Math System  Integer Thread
