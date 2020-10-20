@@ -32,3 +32,4 @@ java.lang 默认导入包  ：String Math System  Integer Thread
    super（）和this（）不能同时出现在构造方法中
    super不能访问父类的private成员
    super和this不能出现在static方法里
+   static会被继承但不能重写
