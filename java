@@ -33,3 +33,9 @@ java.lang 默认导入包  ：String Math System  Integer Thread
    super不能访问父类的private成员
    super和this不能出现在static方法里
    static会被继承但不能重写
+
+三.内部类
+   可以直接访问外部类的私有属性
+   外部类不可以直接访问内部类的私有属性（可以通过 在外部类中new一个内部对像访问）
+   不能定义静态属性
+   当成类中普通成员变量，只不过是class类型
