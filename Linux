@@ -1,0 +1,2 @@
+     Linux服务器中发送http的post请求并且参数为json格式
+curl -i -k  -H "Content-type: application/json" -X POST -d '{json字符串}' url地址
