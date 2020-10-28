@@ -1,4 +1,4 @@
-构造方法块
+一、构造方法块
 public test{
 
   String a;
@@ -50,3 +50,6 @@ java.lang 默认导入包  ：String Math System  Integer Thread
    finally里没return 但修改值 try里有return，类似分为值传递和引用传递
      1.值传递不会改变try里作为返回的return值
      2.引用传递会改变成finally里修改的值
+     
+
+五、常量池1.7之后放在堆空间
