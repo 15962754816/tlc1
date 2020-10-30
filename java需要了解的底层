@@ -5,3 +5,9 @@ CPU基本组成
   4.CU ->control unit 控制单元
   5.MMU -> Memory Management unit 内存管理单元
   6.cache
+
+
+缓存
+   缓存行对齐：对于有些特别敏感的数字，会存在线程高竞争访问，为了保证不发生伪共享，可以使用缓存行对齐的方式编程
+   JDK7中采用long padding 方式
+   JDK8中加入注解@Contended  需要加上：JVM -XX:RetrictContended
