@@ -1,3 +1,5 @@
+
+1 Byte (B) = 8 bits (b) 字节=8个二进制位 
 一、构造方法块
 public test{
 
