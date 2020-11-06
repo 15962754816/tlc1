@@ -55,3 +55,33 @@ java.lang 默认导入包  ：String Math System  Integer Thread
      
 
 五、常量池1.7之后放在堆空间
+
+
+六.集合
+   ArrayList 底层实现是数组  查询快 插入删除慢
+   LinkedList 底层实现是链表  插入删除快 查询慢
+   HashSet  底层实现是HashMap hash表  唯一 无序
+   TreeSet  底层是TreeMap  黑白二叉树   唯一  有序 
+   
+   HashSet：内部的数据结构是哈希表，是线程不安全的。
+    HashSet中保证集合中元素是唯一的方法：通过对象的hashCode和equals方法来完成对象唯一性的判断。
+ 
+    如果对象的hashCode值不同，则不用判断equals方法，就直接存到HashSet中。
+
+    如果对象的hashCode值相同，需要用equals方法进行比较，如果结果为true，则视为相同元素，不存，如果结果为false，视为不同元素，进行存储。
+
+   注意：如果元素要存储到HashCode中，必须覆盖hashCode方法和equals方法。
+
+
+    TreeSet：可以对Set集合中的元素进行排序，是线程不安全的。
+
+    TreeSet中判断元素唯一性的方法是：根据比较方法的返回结果是否为0，如果是0，则是相同元素，不存，如果不是0，则是不同元素，存储。
+
+    TreeSet对元素进行排序的方式：
+
+
+    元素自身具备比较功能，即自然排序，需要实现Comparable接口，并覆盖其compareTo方法。
+
+    元素自身不具备比较功能，则需要实现Comparator接口，并覆盖其compare方法。
+
+
