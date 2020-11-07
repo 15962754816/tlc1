@@ -58,10 +58,15 @@ java.lang 默认导入包  ：String Math System  Integer Thread
 
 
 六.集合
+
+   
    ArrayList 底层实现是数组  查询快 插入删除慢
    LinkedList 底层实现是链表  插入删除快 查询慢
-   HashSet  底层实现是HashMap hash表  唯一 无序
+   HashSet  底层实现是HashMap 哈希表  唯一 无序
    TreeSet  底层是TreeMap  黑白二叉树   唯一  有序 
+   
+   ArrayList 线程不安全 扩容每次增加本身的一半
+   vector  线程安全  扩容每次增加本身的大小
    
    HashSet：内部的数据结构是哈希表，是线程不安全的。
     HashSet中保证集合中元素是唯一的方法：通过对象的hashCode和equals方法来完成对象唯一性的判断。
