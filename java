@@ -88,5 +88,10 @@ java.lang 默认导入包  ：String Math System  Integer Thread
     元素自身具备比较功能，即自然排序，需要实现Comparable接口，并覆盖其compareTo方法。
 
     元素自身不具备比较功能，则需要实现Comparator接口，并覆盖其compare方法。
+    
+    
+    
+    
+    randomaccessfile  文件分割分块读取文件
 
 
